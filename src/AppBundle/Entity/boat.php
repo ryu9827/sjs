@@ -11,6 +11,18 @@ class boat
 {
 
 /**
+* @ORM\Column(type="integer")
+* @ORM\Id
+* @ORM\GeneratedValue(strategy="AUTO")
+*/
+    private $id;
+
+/**
+* @ORM\Column(type="string", length=255)
+*/
+    private $name;
+
+/**
 * @ORM\Column(type="string", length=255)
 */
 	private $arrival_date;
@@ -20,22 +32,12 @@ class boat
 */
 	private $delivery_date;
 
-/**
-* @ORM\Column(type="integer")
-* @ORM\Id
-* @ORM\GeneratedValue(strategy="AUTO")
-*/
-	private $id;
 
 /**
 * @ORM\Column(type="integer", length=11)
 */
 	private $length;
 
-/**
-* @ORM\Column(type="string", length=255)
-*/
-	private $name;
 
 /**
 * @ORM\Column(type="string", length=255)
