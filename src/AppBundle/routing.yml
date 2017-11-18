@@ -1,0 +1,7 @@
+boats_list:
+    pattern:      /api/boats
+    defaults:     { _controller: AppBundle:Default:list }
+
+boat_show:
+    pattern:      /api/boats/{id}
+    defaultes:    { _controller:AppBundle:Default:getBoat}
